@@ -1,10 +1,10 @@
-console.log("Connected");
+// console.log("Connected");
 
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function() {
-    alert("loaded");
+    // alert("loaded");
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
@@ -45,6 +45,8 @@ function runGame(gameType) {
         displayMultiplyQuestion(num1, num2);
     } else if (gameType === "subtract") {
             displaySubtractQuestion(num1, num2);
+    } else if (gameType === "division") {
+                displayDivisionQuestion(num1, num2);    
     } else {
         alert(`Unknown game type: ${gameType}`);
         throw `Unknown game type: ${gameType}. Aborting!`;
@@ -86,6 +88,8 @@ if (operator === "+") {
     return [operand1 * operand2, "multiply"];
 } else if (operator === "-") {
     return [operand1 - operand2, "subtract"];
+} else if (operator ==="/") {
+    return [operand1 / operand2, "division"];
 } else {
     alert(`Unimplemented operator ${operator}`);
     throw `Unimplemented operator ${operator}. Aborting!`;
@@ -129,4 +133,12 @@ function displayAdditionQuestion(operand1,operand2) {
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "x";
 }
- 
+
+function displayDivisionQuestion(operand1, operand2) {
+    
+    let total = (operand1*operand2);
+    console.log("total",total);
+	document.getElementById("operand1").textContent = total;
+	document.getElementById("operand2").textContent = operand2;
+	document.getElementById("operator").textContent = "/";
+} 
