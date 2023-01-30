@@ -1,39 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <title>LoveMaths</title>
-   
-</head>
-<body>
-    <h1 class="heading"> 
-        <img class="logo" src="assets/images/lovemathslogo.png" alt="logo"> Love Maths
-    </h1>
 
+    <script src="https://kit.fontawesome.com/4fbe7d0caf.js" crossorigin="anonymous"></script>
+
+    <i class="fa-regular fa-hand-back-fist"></i>
+    <i class="fa-regular fa-hand"></i>
+    <i class="fa-regular fa-hand-scissors"></i>
+    <i class="fa-regular fa-hand-lizard"></i>
+    <i class="fa-regular fa-hand-spock"></i>
+
+    <title>RPSLS</title>
+
+</head>
+
+<body>
+    <h1 class="heading">
+
+        <i class="fa-regular fa-hand-back-fist"></i>
+        <i class="fa-regular fa-hand"></i>
+        <i class="fa-regular fa-hand-scissors"></i>
+        <i class="fa-regular fa-hand-lizard"></i>
+        <i class="fa-regular fa-hand-spock"></i>
+
+        <!-- <img class="logo" src="assets/images/lovemathslogo.png" alt="logo"> -->
+        Rock Paper Scissors Lizard Spock
+    </h1>
+    <h2>Make your choice</h2>
     <div class="game-area">
-    
-        <div class="controls-area"> 
-            <button data-type="addition" class="btn btn--big btn--green">
-                <i class="fas fa-plus"></i>
+        <!-- <i class="fa-regular fa-hand-back-fist"></i> -->
+        <div class="controls-area">
+            <!-- <button data-type="rock" class="btn btn--big btn--green"> -->
+            <button data-type="rock">
+                <i class="fa-regular fa-hand-back-fist">Rock</i>
+                <!-- <i class="fa-regular fa-hand-back-fist"></i>
+                <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+               // <i class="fas fa-plus"></i> -->
             </button>
-            <button data-type="subtract" class="btn btn--big btn--blue">
-                <i class="fas fa-minus"></i>
+            <!-- <button data-type="paper" class="btn btn--big btn--blue"> -->
+            <button data-type="paper">
+                <i class="fa-regular fa-hand">Paper</i>
+                <!-- <i class="fas fa-minus"></i> -->
             </button>
-            <button data-type="multiply" class="btn btn--big btn--orange">
-                <i class="fas fa-times"></i>
+            <!-- <button data-type="scissors" class="btn btn--big btn--orange"> -->
+            <button data-type="scissors">
+                            <i class="fa-regular fa-hand-scissors"></i>
+                <!-- <i class="fas fa-times"></i> -->
             </button>
-            <button data-type="division" class="btn btn--big btn--red">
-                <i class="fas fa-divide"></i>
+            <!-- <button data-type="lizard" class="btn btn--big btn--red">   -->
+            <button data-type="lizard">
+                <i class="fa-regular fa-hand-lizard"></i>
+                <!-- <i class="fas fa-divide"></i> -->
+            </button>
+            <!-- <button data-type="spock" class="btn btn--big btn--purple"> -->
+            <button data-type="spock">
+                 <i class="fa-regular fa-hand-spock"></i>
+                <!-- <i class="fas fa-divide"></i> -->
             </button>
         </div>
-    
-        <div class="question-area">
+        <!-- <div>
+        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-lizard-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+        </div> -->
+
+        <!-- <div class="question-area">
             <span id="operand1">0</span>
             <span id="operator">+</span>
             <span id="operand2">0</span>
@@ -41,15 +82,17 @@
             <p class="answer-message">Enter Answer:</p>
             <input id="answer-box" type="number">
         </div>
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button> -->
 
     </div>
 
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <p class="scores">You Win <span id="score">0</span></p>
+        <p class="scores">My Win <span id="incorrect">0</span></p>
+        <p class="scores">Draw <span id="incorrect">0</span></p>
     </div>
 
-  <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

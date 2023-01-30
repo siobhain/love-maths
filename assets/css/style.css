@@ -112,7 +112,7 @@ body {
 }
 
 .btn--big::after {
-    content: attr(data-type); /* read this attribute data-type to get content to be styled here */
+    content: attr(data-type); /* read this attribute data-type to get text content styled & below fa icon */
     font-size: 1rem;
     color: #445361;
     position: relative;
@@ -160,6 +160,18 @@ body {
 .btn--green:active,
 .btn--green:hover {
     background-color: darkgreen;
+    color: white;
+}
+
+
+.btn--purple {
+    border-color: purple;
+    color: purple;
+}
+
+.btn--purple:active,
+.btn--purple:hover {
+    background-color: darkviolet;
     color: white;
 }
 
